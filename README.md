@@ -20,8 +20,8 @@ public class PlayerController : MonoBehaviour
     Vector2 currentDir = Vector2.zero;
     Vector2 currentDirVelocity = Vector2.zero;
 
-    Vector2 currentMouseDelta = Vector2.zero
-    Vector2 currentMouseDeltaVelocity = Vector2.zero
+    Vector2 currentMouseDelta = Vector2.zero;
+    Vector2 currentMouseDeltaVelocity = Vector2.zero;
 
     // Start is called before the first frame update
     void Start()
