@@ -7,6 +7,7 @@ public class NewBehaviourScript : MonoBehaviour
 {
     private bool jumpKeyWasPressed;
     private float horizontalInput;
+    private float verticalInput;
     private Rigidbody rigidbodyComponent;
     // Start is called before the first frame update
     void Start()
@@ -22,6 +23,7 @@ public class NewBehaviourScript : MonoBehaviour
         }
 
         horizontalInput = Input.GetAxis("Horizontal");
+        verticalInput = Input.GetAxis("Vertical")
     }
     // FixedUpdate is called once every physics update
     private void FixedUpdate()
@@ -34,4 +36,6 @@ public class NewBehaviourScript : MonoBehaviour
 
         GetComponent<Rigidbody>().velocity = new Vector3(horizontalInput, GetComponent<Rigidbody>().velocity.y, 0);
     }
+    
+    GetComponent<Rigidbody>().velocity = new Vector3(horizontalInput, GetComponent<Rigidbody>().velocity.y, x, 0)
 }
