@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviour
 
     void UpdateMovement()
     {
-        Vector2 inputDir = new Vector2(inputDir.GetAxisRaw("Horizontal"), inputDir.GetAxisRaw("Vertical"));
+        Vector2 inputDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         inputDir.Normalize();
 
         Vector3 velocity = (transform.forward * inputDir.y + transform.right * inputDir.x) * walkSpeed;
@@ -56,3 +56,4 @@ public class PlayerController : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
     }
 }
+
