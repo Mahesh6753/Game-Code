@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Transform playerCamera = null;
     [SerializeField] float mouseSensitivity = 3.5f;
 
-    [SerializeField] bool lockCursor = true
+    [SerializeField] bool lockCursor = true;
     float cameraPitch = 0.0f;
 
     // Start is called before the first frame update
