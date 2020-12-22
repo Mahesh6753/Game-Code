@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
 
         currentMouseDelta = Vector2.SmoothDamp(currentMouseDelta, targetMouseDelta, ref currentMouseDeltaVelocity, mouseSmoothTime);
 
-        cameraPitch -= currentmouseDelta.y * mouseSensitivity;
+        cameraPitch -= currentMouseDelta.y * mouseSensitivity;
 
         cameraPitch = Mathf.Clamp(cameraPitch, -90.0f, 90.0f);
 
@@ -68,4 +68,3 @@ public class PlayerController : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
     }
 }
-
